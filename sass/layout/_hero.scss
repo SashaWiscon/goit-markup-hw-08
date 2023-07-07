@@ -1,0 +1,40 @@
+.hero { 
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  background-color: #212121;
+    text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  /* background-size: или через ширину;??? */
+  }  
+                                    
+  .hero-title {
+    width: 696px;
+    /* text-align: center; */
+    margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  }
+  .hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* height: 50px; */
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+    border: 1px solid transparent;
+    border-radius: 7px;
+    }
