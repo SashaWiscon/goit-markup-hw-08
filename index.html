@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
+      <div class="page-header__container container header-container--flex">
         <a lang="en" class="main-logo" href="./index.html">Web<span class="main-logo--black">Studio</span></a>
       <nav class="nav">
         <ul class="nav__list">
@@ -21,6 +21,12 @@
           <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-btn" .js-open-menu>
+        <svg class="mobile-menu-btn__icon" width="40" height="40"> 
+          <use href="./images/sprite.svg#burger-menu-icon">
+          </use>
+        </svg>
+      </button>
       <ul class="contacts">
         <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
           <svg class="contacts__envelope">
@@ -34,17 +40,51 @@
           +38 096 111 11 11</a></li>
       </ul>
         </div>
+
+                            <!-- Mobile -->
+        <div class="mobile-menu" .js-menu-container>
+          <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" .js-close-menu>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-menu_close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="./">Студія</a>
+              </li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="./">Портфоліо</a>
+              </li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="./">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item"><a class="mobile-contacts__link" href="">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts__item"><a class="mobile-contacts__link" href="">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item"><a class="mobile-social__link" href="./">Instagram</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link" href="./">Twitter</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link" href="./">Facebook</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link" href="./">LinkedIn</a></li>
+          </ul>
+        </div>
+        </div>
     </header>
       
     <main>
       <section class="hero">
+        <h3>ggg</h3>
+      </section>
+      <!-- <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-btn pointer" type="button" data-modal-open>Замовити послугу</button>
       </div>
-      </section>
+      </section> -->
 
-      <section class="advantages-section">
+      <!-- <section class="advantages-section">
         <div class="container">
         <h2 class="section-title hidden">Our advantages</h2>
         
@@ -100,9 +140,9 @@
           </li>
         </ul>
       </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="deal-list">
@@ -147,9 +187,9 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> -->
                                          <!-- BEM block -->
-      <section class="section-team">
+      <!-- <section class="section-team">
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="card-set">
@@ -318,11 +358,11 @@
           </li>
         </ul>
       </div>
-      </section>
+      </section> -->
                             <!-- En of team section -->
      
      
-                            <section class="section">
+                            <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list"> 
@@ -371,9 +411,9 @@
           </ul>
         </div>
      </section>
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-main ">
         <div class="footer-contacts">
        <a lang="en" class="main-logo footer__logo" href="./index.html">Web<span class="main-logo--white">Studio</span></a>
@@ -434,7 +474,7 @@
         </form>
       </div>
     </div> 
-    </footer>
+    </footer> -->
                                       <!-- backdrop modal window -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -490,5 +530,6 @@
   </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
   </body>
 </html>

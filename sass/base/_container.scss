@@ -1,6 +1,37 @@
-.container {
+// .container {
+//     margin: 0 auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     width: 1200px;
+//   }
+//end
+  // @media screen and (min-width: 480px) {
+  //   .container {
+
+  //   }  
+  // }
+ .container {
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+ //480+
+ @media screen and (min-width: 480px) {
+  .container {
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
+    width: 450px;
   }
+ }
+ //768+ 
+ @media screen and (min-width: 768px) {
+  .container {
+ width: 738px; 
+  }
+ }
+ //1200+
+ @media screen and (min-width: 1200px) {
+  .container {
+ width: 1170px; 
+  }
+ 
+ }
+ 
