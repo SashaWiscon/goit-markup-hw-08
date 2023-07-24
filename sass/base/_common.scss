@@ -20,7 +20,10 @@ body {
       margin: 0;
     }
     img {
+      //для адапт верстки 
       display: block;
+      max-width: 100%; 
+      height: auto;
     }
     .pointer {
       cursor: pointer;
