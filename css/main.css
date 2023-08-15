@@ -53,8 +53,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .hidden {
@@ -74,22 +80,25 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
+    margin: 0 auto;
     width: 450px;
+    outline: 1px solid #212121;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
+    border: 1px solid #6f56ca;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
+    border: 1px solid #708ba1;
   }
 }
 .main-logo {
@@ -115,36 +124,39 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header-container--mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
   .nav__list {
     display: none;
   }
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu-btn__icon {
+    fill: #000000;
+  }
+  .contacts {
+    display: none;
+  }
 }
-
-.contacts {
-  display: none;
-}
-
-.header-container--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .contacts__link {
+    display: none;
+  }
 }
 
 .page-header {
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-.mobile-menu-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
-.mobile-menu-btn__icon {
-  fill: #000000;
 }
 
 .mobile-menu {
@@ -186,21 +198,14 @@ img {
 .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
   fill: #2196F3;
 }
-
-.mobile-menu__close-btn:hover {
-  fill: #2196F3;
-}
-
-.mobile-nav {
+.mobile-menu__close-btn .mobile-nav {
   margin-bottom: 302px;
   margin-left: 40px;
 }
-
-.mobile-nav__item:not(:last-child) {
+.mobile-menu__close-btn .mobile-nav__item:not(:last-child) {
   margin-bottom: 35px;
 }
-
-.mobile-nav__link {
+.mobile-menu__close-btn .mobile-nav__link {
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -209,13 +214,14 @@ img {
   text-decoration: none;
   color: rgb(33, 33, 33);
 }
-
-.mobile-menu-tel {
+.mobile-menu__close-btn .mobile-nav__link.current {
+  color: var(--accent-text-color);
+}
+.mobile-menu__close-btn .mobile-menu-tel {
   margin-bottom: 32px;
   margin-left: 40px;
 }
-
-.mobile-menu-tel--link {
+.mobile-menu__close-btn .mobile-menu-tel--link {
   color: #2196F3;
   font-family: Roboto;
   font-weight: 500;
@@ -224,13 +230,11 @@ img {
   line-height: normal;
   text-decoration: none;
 }
-
-.mobile-menu-email {
+.mobile-menu__close-btn .mobile-menu-email {
   margin-bottom: 64px;
   margin-left: 40px;
 }
-
-.mobile-menu-email--link {
+.mobile-menu__close-btn .mobile-menu-email--link {
   color: #757575;
   font-family: Roboto;
   font-weight: 500;
@@ -239,13 +243,15 @@ img {
   line-height: normal;
   text-decoration: none;
 }
-
-.mobile-social {
+.mobile-menu__close-btn .mobile-social {
   display: flex;
   margin-left: 40px;
 }
-
-.mobile-social__link {
+.mobile-menu__close-btn .mobile-social__item:not(:last-child) {
+  margin-right: 20px;
+  text-decoration: none;
+}
+.mobile-menu__close-btn .mobile-social__link {
   text-decoration: none;
   color: #2196F3;
   font-family: Roboto;
@@ -255,14 +261,10 @@ img {
   line-height: 1.22;
 }
 
-.mobile-social__item:not(:last-child) {
-  margin-right: 20px;
-  text-decoration: none;
-}
-
 @media screen and (min-width: 768px) {
-  .mobile-menu-btn {
-    display: none;
+  .page-header__container {
+    display: flex;
+    align-items: center;
   }
   .nav {
     display: flex;
@@ -331,15 +333,21 @@ img {
   .nav__link:hover, .nav__link:focus {
     color: var(--accent-text-color);
   }
+  .mobile-menu-btn {
+    display: none;
+  }
   .contacts {
     display: block;
     margin-left: auto;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
   .contacts__link {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -348,10 +356,14 @@ img {
   .contacts__link:hover, .contacts__link:focus {
     color: var(--accent-text-color);
   }
+  .contacts__link:hover,
+  .contacts__link:focus {
+    color: var(--accent-text-color);
+  }
   .contacts__envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
   }
@@ -360,13 +372,35 @@ img {
   }
   .contacts__smartphone {
     width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    height: 14px;
+    margin-right: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
   }
   .contacts__smartphone:hover, .contacts__smartphone:focus {
     fill: var(--accent-text-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  .contacts__link {
+    font-size: 14px;
+  }
+  .contacts__envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .contacts__smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
 /* ::backdrop button  */
@@ -801,12 +835,22 @@ social-info__pict:focus .social-info__pict {
   width: 100%;
   background-color: #e795be;
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .hero {
-    background-color: aquamarine;
+    background-color: #b7cf2f;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-color: #0f869b;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: aqua;
+  }
+}
+
 .advantages-section {
   padding-top: 94px;
   padding-bottom: 0;
