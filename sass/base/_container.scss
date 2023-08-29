@@ -15,23 +15,36 @@
   .container {
     margin: 0 auto;
     width: 450px;
-    // background-color: rgb(223, 91, 91);
-    outline: 1px solid #212121;
   }
  }
  //768+ 
  @media screen and (min-width: 768px) {
   .container {
- width: 738px;
- border: 1px solid #6f56ca; 
+ width: 738px; 
   }
  }
  //1200+
  @media screen and (min-width: 1200px) {
   .container {
  width: 1170px;
- border: 1px solid #708ba1; 
   }
  
  }
+
+//  //********Mobile only
+// @media screen and (max-width:767px){
+
+// }
+
+
+//     //**********Tablet
+// @media screen and (min-width:768px){
+
+//   }
+  
+
+//     // ********Desktop
+//     @media screen and (min-width:1200px){
+    
+//     }
  

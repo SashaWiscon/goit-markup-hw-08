@@ -26,15 +26,11 @@
   .contacts {  
     display: none;
   }
-//   .contacts__item { child
-//     display: none;
-// }
+  .contacts__link {
+      display: none; 
+  }
 }
-.contacts__link {
-  @media screen and (max-width:767px){
-    display: none; 
- }
-}
+
 .page-header {
   position: relative;
   padding-top: 16px;
@@ -184,6 +180,8 @@
   &:focus {
     fill: #2196F3;
   }
+}
+
   .mobile-nav {
     margin-bottom: 302px;
     margin-left: 40px;
@@ -246,20 +244,17 @@
     font-weight: 500;
     line-height: 1.22;
     }
- }
 
-                      //tablet
+    // !!!!!!!!!!!!!!!!  Tablet
 
 @media screen and (min-width: 768px){
   .page-header__container {
-    // @media screen and (min-width:1200px) {
      display: flex;
      align-items: center;
    //   margin: 0 auto; 
    // padding-left: 15px; 
    // padding-right: 15px; 
    // width: 1200px; 
-   //}
  }
   .nav {
   display: flex;
@@ -385,8 +380,8 @@
   }
 
 
-  
-//   desktop
+// !!!!!!!!!!!!!!!!!!!!   desktop
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
