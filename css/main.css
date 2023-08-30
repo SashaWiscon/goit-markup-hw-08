@@ -1020,7 +1020,7 @@ social-info__pict:focus .social-info__pict {
   .advantages-icons {
     width: 354px;
   }
-  .advantages .advantages-item + .advantages-item {
+  .advantages-item:nth-child(2n) {
     margin-left: 30px;
   }
 }
