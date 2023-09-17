@@ -1,9 +1,40 @@
 .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    color: var(--secondary-text-color);
-    text-align: center; 
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  text-align: center; 
+}
+ 
+ //********Mobile only
+@media screen and (max-width:767px){
+
+}
+
+
+    //**********Tablet
+@media screen and (min-width:768px){
+
   }
+  
+
+    // ********Desktop
+    @media screen and (min-width:1200px){
+      .section-title {
+        margin-bottom: 50px;
+        font-size: 36px;
+      }
+    }
+
+
+// .section-title { was
+//     margin-top: 0;
+//     margin-bottom: 50px;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.2;
+//     color: var(--secondary-text-color);
+//     text-align: center; 
+//   }
