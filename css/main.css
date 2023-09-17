@@ -724,11 +724,6 @@ social-info__pict:focus .social-info__pict {
   background-color: #2F303A;
 }
 
-.footer-main {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-logo {
   margin-top: 0;
   margin-bottom: 28px;
@@ -873,6 +868,17 @@ social-info__pict:focus .social-info__pict {
   background-image: url(../images/icon\ send.svg);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-main {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-main {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .hero {
   margin-right: auto;
   margin-left: auto;
