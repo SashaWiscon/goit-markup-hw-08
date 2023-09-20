@@ -51,10 +51,16 @@
 
 
                   //********Mobile only
-@media screen and (max-width:767px){
+@media screen and (max-width:479px)  {
+  .clients-list-item {
+    flex-basis: calc((100% -30px )/2);
+  }
+}
+   @media screen and (min-width:480px) and (max-width:767px){
   .clients-list-item {
     width: 210px;
   }
+
   .clients-list-item:nth-child(2n) {
     margin-left: 30px;
   }

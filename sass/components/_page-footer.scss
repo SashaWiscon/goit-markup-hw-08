@@ -2,14 +2,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
  background-color: #2F303A;} 
-
+ .footer-main--wrap-flex {
+  display: flex;
+ }
 .footer-logo {
  margin-top: 0;
  margin-bottom: 28px; 
 }   
-.footer-contacts {
-  margin-right: 70px;
-}
+
 .footer-social-title {
   margin-bottom: 20px;
 font-family: 'Roboto';
@@ -180,12 +180,22 @@ cursor: pointer;
 .footer-main {
         display: block;
        }
+       .footer-main--wrap-flex {
+        display: block;
+       }
+       .footer-contacts {
+        margin-bottom: 60px;
+        text-align: center;
+      }
 }
 
 
     //**********Tablet
 @media screen and (min-width:768px) and (max-width:1199px){
-
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+  
   }
   
 
@@ -195,4 +205,7 @@ cursor: pointer;
         display: flex;
         align-items:baseline;
        }
+       .footer-contacts {
+        margin-right: 70px;
+      }
     }
