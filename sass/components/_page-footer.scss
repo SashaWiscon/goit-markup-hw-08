@@ -187,13 +187,16 @@ cursor: pointer;
         margin-bottom: 60px;
         text-align: center;
       }
+      .footer-subscribe {
+        text-align: center;
+      }
 }
 
 
     //**********Tablet
 @media screen and (min-width:768px) and (max-width:1199px){
   .footer-main--wrap-flex {
-    justify-content: space-around;
+  justify-content: space-around;
   }
   .footer-contacts {
     margin-bottom: 60px;
@@ -216,5 +219,10 @@ cursor: pointer;
        }
        .footer-contacts {
         margin-right: 70px;
+        text-align: center;
+        
       }
+      // .footer-social {
+      //   text-align: center;
+      // }
     }
