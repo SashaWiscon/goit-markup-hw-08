@@ -810,10 +810,6 @@ social-info__pict:focus .social-info__pict {
   text-decoration: none;
 }
 
-.footer-subscribe {
-  margin-left: auto;
-}
-
 .footer-subscribe-call {
   display: inline-block;
   margin-bottom: 20px;
@@ -826,14 +822,13 @@ social-info__pict:focus .social-info__pict {
 }
 
 .footer-form {
-  display: flex;
+  display: block;
   /* align-items: flex-end; */
 }
 
 .footer-form-input {
   margin-right: 10px;
   padding-left: 16px;
-  width: 358px;
   height: 50px;
   font-style: normal;
   font-weight: 400;
@@ -879,8 +874,20 @@ social-info__pict:focus .social-info__pict {
     margin-bottom: 60px;
     text-align: center;
   }
+  .footer-social {
+    margin-bottom: 60px;
+    text-align: center;
+  }
   .footer-subscribe {
     text-align: center;
+  }
+  .footer-form-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  .footer-form-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -889,12 +896,21 @@ social-info__pict:focus .social-info__pict {
   }
   .footer-contacts {
     margin-bottom: 60px;
+    text-align: center;
   }
-  .footer-form {
-    flex-direction: column;
+  .footer-social {
+    text-align: center;
   }
   .footer-subscribe {
     text-align: center;
+  }
+  .footer-form-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  .footer-form-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,6 +921,16 @@ social-info__pict:focus .social-info__pict {
   .footer-contacts {
     margin-right: 70px;
     text-align: center;
+  }
+  .footer-subscribe {
+    margin-left: auto;
+  }
+  .footer-form {
+    display: flex;
+    /* align-items: flex-end; */
+  }
+  .footer-form-input {
+    width: 358px;
   }
 }
 .hero {
@@ -1250,6 +1276,15 @@ social-info__pict:focus .social-info__pict {
 @media screen and (max-width: 479px) {
   .clients-list-item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .clients-list-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .clients-list-item {
+    margin-bottom: 30px;
+  }
+  .clients-list-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
