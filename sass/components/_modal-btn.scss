@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 450px;
+  // width: 450px; разная в интервалах
   height: 609px;
   padding: 40px;
   background-color: #fff;
@@ -64,14 +64,14 @@
     display:block;
     width: 100%;
     margin-bottom: 10px;
-    width: 370px;
+    // width: 370px; - разаня в интервалах
   height: 58px;
   }
   .form-field-message {
     display:block;
    width: 100%;
    margin-bottom: 20px;
-   width: 370px;
+  //  width: 370px; разаня в интервалах
  height: 138px;
  }
  .form-contact-inscription {
@@ -191,13 +191,42 @@ color: #757575;
                  
                  
                  //********Mobile only
-@media screen and (max-width:767px){
+@media screen and (max-width:479px) {
+  .modal {
+    width: 100%;
+  }
+  .form-field {
+    width: 100%;
+  }
+  .form-field-message {
+  width: 100%;
+  }
+}
+               
+@media screen and (min-width:480px) and (max-width:767px){
+  .modal {
+    width: 450px;
+  }
+  .form-field {
+    width: 370px;
+  }
+  .form-field-message {
+    width: 370px ;
+  }
 }
 
 
     //**********Tablet
     @media screen and (min-width:768px){
-    
+      .modal {
+        width: 450px;
+      }
+      .form-field {
+        width: 370px;
+      }
+      .form-field-message {
+        width: 370px;
+      }
     }
 
 

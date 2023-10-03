@@ -184,7 +184,6 @@ img {
 }
 
 .mobile-menu__container {
-  background-color: rgb(174, 218, 203);
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -440,7 +439,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #fff;
@@ -489,7 +487,6 @@ img {
   display: block;
   width: 100%;
   margin-bottom: 10px;
-  width: 370px;
   height: 58px;
 }
 
@@ -497,7 +494,6 @@ img {
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  width: 370px;
   height: 138px;
 }
 
@@ -634,6 +630,39 @@ img {
   background-color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+  .form-field {
+    width: 100%;
+  }
+  .form-field-message {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
+  .form-field {
+    width: 370px;
+  }
+  .form-field-message {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+  .form-field {
+    width: 370px;
+  }
+  .form-field-message {
+    width: 370px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -863,7 +892,35 @@ social-info__pict:focus .social-info__pict {
   background-image: url(../images/icon\ send.svg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .footer-main {
+    display: block;
+  }
+  .footer-main--wrap-flex {
+    display: block;
+  }
+  .footer-contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .footer-social {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .footer-subscribe {
+    text-align: center;
+  }
+  .footer-form-input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .footer-form-btn {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-main {
     display: block;
   }
