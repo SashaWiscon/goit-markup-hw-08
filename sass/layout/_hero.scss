@@ -35,7 +35,7 @@ text-align: center;
       //********Mobile only
 @media screen and (max-width:767px){
 .hero {
-max-width: 480px;
+width: 480px;
 height: 400px;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
@@ -59,7 +59,7 @@ height: 400px;
     //**********Tablet
 @media screen and (min-width:768px){
 .hero {
-max-width: 768px;
+width: 768px;
 height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), url(../images/hero-background-tablet.jpg);

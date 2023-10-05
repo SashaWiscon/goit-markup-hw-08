@@ -276,6 +276,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
   .page-header__container {
     display: flex;
     align-items: center;
@@ -328,6 +332,9 @@ img {
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+  }
+  .nav__link.current {
+    color: var(--accent-text-color);
   }
   .nav__link::after {
     position: absolute;
@@ -977,7 +984,6 @@ social-info__pict:focus .social-info__pict {
   }
   .footer-contacts {
     margin-right: 70px;
-    text-align: center;
   }
   .footer-subscribe {
     margin-left: auto;
@@ -1028,7 +1034,7 @@ social-info__pict:focus .social-info__pict {
 
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
+    width: 480px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
   }
@@ -1045,7 +1051,7 @@ social-info__pict:focus .social-info__pict {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-tablet.jpg);
   }
