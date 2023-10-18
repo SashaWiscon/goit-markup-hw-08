@@ -30,9 +30,12 @@
 //   text-align: center; 
 // } 
 .card-set {
-  @media screen and (max-width: 767px) {
-display: block;
-  }
+//   @media screen and (max-width: 767px) { before mentors
+// display: block;
+//   }
+  @media screen and (min-width: 480px) {
+    display: block;
+   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;

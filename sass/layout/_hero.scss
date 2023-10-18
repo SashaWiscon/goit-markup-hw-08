@@ -5,9 +5,22 @@ padding-top: 118px;
 padding-bottom: 118px;
 text-align: center;
  width: 100%;
+ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
+ background-size: cover;
+ 
+//  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2), 
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+.hero {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile@2x.jpg);
+}
 }
 .hero-title {
-    width: 360px;
     margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -33,34 +46,55 @@ text-align: center;
      }
 
       //********Mobile only
-@media screen and (max-width:767px){
-.hero {
-width: 480px;
-height: 400px;
- background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
-    }
-     @media screen and (min-device-pixel-ratio: 2), 
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx){
-    .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile@2x.jpg);
-    }
-   } 
-   .hero-title {
-  line-height: 1.4;
-  }
-}
+// @media screen and (max-width:767px){ - mentor's remark
+// .hero {
+// // width: 480px; сказал убрать
+// height: 400px;
+//  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
+//     }
+//      @media screen and (min-device-pixel-ratio: 2), 
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx){
+//     .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//    rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile@2x.jpg);
+//     }
+//    } 
+//    .hero-title {
+//   line-height: 1.4;
+//   }
+// }
+
+@media screen and (min-width: 480px) {
+  .hero {
+    // width: 480px; сказал убрать
+    height: 400px;
+    //  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile.jpg);
+    //     background-size: cover;
+        }
+      //    @media screen and (min-device-pixel-ratio: 2), 
+      //   screen and (-webkit-min-device-pixel-ratio: 2),
+      //   screen and (min-resolution: 192dpi),
+      //   screen and (min-resolution: 2dppx){
+      //   .hero {
+      //   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      //  rgba(47, 48, 58, 0.4)), url(../images/hero-background-mobile@2x.jpg);
+      //   }
+      //  } 
+      .hero-title {
+        width: 360px;
+      }
+ }
 
 
 
     //**********Tablet
 @media screen and (min-width:768px){
 .hero {
-width: 768px;
-height: 400px;
+// width: 768px; сказал убрать
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), url(../images/hero-background-tablet.jpg);
     }
@@ -73,9 +107,7 @@ height: 400px;
    rgba(47, 48, 58, 0.4)), url(../images/hero-background-tablet@2x.jpg);
     }
    } 
-   .hero-title {
-    width: 360px;
-  }
+ 
   }
   
     // ********Desktop
