@@ -147,10 +147,11 @@ img {
     border: none;
     padding: 0;
     line-height: 0;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
   }
   .mobile-menu-btn__icon {
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu-btn:hover .mobile-menu-btn__icon,
   .mobile-menu-btn:focus .mobile-menu-btn__icon {
@@ -204,7 +205,12 @@ img {
   padding: 0;
   line-height: 0;
   cursor: pointer;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__close-icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__close-btn:hover .mobile-menu__close-icon,
