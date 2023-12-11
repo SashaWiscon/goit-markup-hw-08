@@ -1,5 +1,75 @@
 
 //mobile only
+.mobile-nav {
+  margin-bottom: 302px;
+  margin-left: 40px;
+}
+.mobile-nav__link {
+  font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  text-decoration: none;
+color: rgba(33, 33, 33, 1);
+&.current {
+  color: var(--accent-text-color);
+}
+}
+.mobile-menu-tel--link { 
+  color: #2196F3;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 34px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+}
+.mobile-menu-email--link {
+  color: #757575;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  }
+.mobile-social__link {
+  text-decoration: none;
+  color: #2196F3;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.22;
+}
+
+@media screen and (max-width:480px) {
+  .mobile-menu__container {
+    // background-color: rgb(174, 218, 203);
+    position: relative;
+    padding-top: 48px;
+    // padding-bottom: 48px;
+  }
+  .mobile-nav {
+    margin-bottom: 122px;
+    
+  }
+  .mobile-nav__link {
+  font-size: 30px;
+  }
+  .mobile-menu-tel--link { 
+    font-size: 22px;
+  }
+  .mobile-menu-email--link {
+    font-size: 16px;
+    }
+  .mobile-social__link {
+  font-size: 12px;
+  }
+}
+
+
 @media screen and (max-width:767px){
   .header-container--mobile {
     display: flex;
@@ -203,51 +273,52 @@
   fill: #2196F3;
 }
 
- .mobile-nav {
-    margin-bottom: 302px;
-    margin-left: 40px;
-  }
+//  .mobile-nav { перене с веерх чтоб уменьшить расстояние до соц сетей
+//     margin-bottom: 302px;
+//     margin-left: 40px;
+//   }
   .mobile-nav__item:not(:last-child) {
     margin-bottom: 35px;
   }
-  .mobile-nav__link {
-    font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-    text-decoration: none;
-  color: rgba(33, 33, 33, 1);
-  &.current {
-    color: var(--accent-text-color);
-  }
-  }
+  // .mobile-nav__link { перенес отсюда в начало чтоб уменш шріфт
+  //   font-family: Roboto;
+  // font-size: 40px;
+  // font-style: normal;
+  // font-weight: 500;
+  // line-height: normal;
+  //   text-decoration: none;
+  // color: rgba(33, 33, 33, 1);
+  // &.current {
+  //   color: var(--accent-text-color);
+  // }
+  // }
   .mobile-menu-tel {
     margin-bottom: 32px;
     margin-left: 40px;
   }
-  .mobile-menu-tel--link {
-    color: #2196F3;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 34px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-  }
+  // .mobile-menu-tel--link { перенес отсюда в начало чтоб уменш шр 
+  //   color: #2196F3;
+  //   font-family: Roboto;
+  //   font-weight: 500;
+  //   font-size: 34px;
+  //   font-style: normal;
+  //   line-height: normal;
+  //   text-decoration: none;
+  // }
   .mobile-menu-email {
     margin-bottom: 64px;
     margin-left: 40px;
   }
-  .mobile-menu-email--link {
-    color: #757575;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-    }
+    // .mobile-social__link { перенес отсюда в начало чтоб уменш шрифт
+  // .mobile-menu-email--link { 
+  //   color: #757575;
+  //   font-family: Roboto;
+  //   font-weight: 500;
+  //   font-size: 24px;
+  //   font-style: normal;
+  //   line-height: normal;
+  //   text-decoration: none;
+  //   }
     .mobile-social {
       display: flex;
       margin-left: 40px;
@@ -256,15 +327,15 @@
       margin-right: 20px;
       text-decoration: none;
     }
-    .mobile-social__link {
-      text-decoration: none;
-      color: #2196F3;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.22;
-    }
+    // .mobile-social__link { перенес отсюда в начало чтоб уменш шрифт
+    //   text-decoration: none;
+    //   color: #2196F3;
+    // font-family: Roboto;
+    // font-size: 18px;
+    // font-style: normal;
+    // font-weight: 500;
+    // line-height: 1.22;
+    // }
 
     // !!!!!!!!!!!!!!!!  Tablet
 
