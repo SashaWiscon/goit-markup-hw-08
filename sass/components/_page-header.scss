@@ -49,6 +49,7 @@ line-height: 1.22;
     // background-color: rgb(174, 218, 203);
     position: relative;
     padding-top: 48px;
+    padding-left: 0;
     // padding-bottom: 48px;
   }
   .mobile-nav {
@@ -74,7 +75,7 @@ line-height: 1.22;
   .header-container--mobile {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    align-items: center;
   }
   .nav {
       display: none;

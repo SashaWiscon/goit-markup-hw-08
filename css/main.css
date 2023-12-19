@@ -183,6 +183,7 @@ img {
   .mobile-menu__container {
     position: relative;
     padding-top: 48px;
+    padding-left: 0;
   }
   .mobile-nav {
     margin-bottom: 122px;
@@ -204,6 +205,7 @@ img {
   .header-container--mobile {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .nav {
     display: none;
@@ -689,6 +691,13 @@ img {
   }
   .form-field-message {
     width: 100%;
+  }
+  .form-agreement-field::before {
+    width: 15px;
+    height: 15px;
+  }
+  .form-agreement-text {
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1207,6 +1216,9 @@ social-info__pict:focus .social-info__pict {
   }
   .advantages-item {
     width: 270px;
+  }
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
   }
   .advantages .advantages-item + .advantages-item {
     margin-left: 30px;

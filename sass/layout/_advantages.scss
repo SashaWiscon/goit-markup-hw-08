@@ -63,7 +63,6 @@
       .advantages-icons {
         width: 450px;
       }
-     
    }
 
       //**********Tablet
@@ -98,6 +97,9 @@
   }
   .advantages-item {
     width: 270px;
+    }
+    .advantages-item:not(:last-child){
+      margin-bottom: 0;
     }
     .advantages .advantages-item + .advantages-item {
       margin-left: 30px;
